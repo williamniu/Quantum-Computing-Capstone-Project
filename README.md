@@ -14,7 +14,7 @@ Two quantum techniques are in scope:
 - **Quantum Reservoir Computing (QRC)** — features pass through a random quantum
   circuit that projects them into a high-dimensional Hilbert space, then a simple
   classical readout is trained on the resulting embeddings.
-- **Quantum Signature Kernels (QSK)** — a signature-kernel classifier where the
+- **Quantum Enhanced Signature Kernels (QESK)** — a signature-kernel classifier where the
   feature map is implemented by a parameterized quantum circuit.
 
 We replicate and extend **Konduri & Li (2024)**, a FRED-MD benchmarking study that
@@ -22,9 +22,8 @@ compares classical ML methods on U.S. macro forecasting, and add the two quantum
 models on top. Target indicators (per the sponsor's problem statement):
 
 - **Regression:** `INDPRO`, `PAYEMS`, `CPIAUCSL`, `S&P 500` at horizons *h* ∈ {1, 3, 6, 12}
-- **Classification:** `USREC` (NBER recession indicator) at the same horizons
-
-Deliverables: the best classical baseline we can build + a QRC model + a QSK model,
+  
+Deliverables: the best classical baseline we can build + a QRC model + a QESK model,
 all evaluated on identical data and identical expanding-window folds so scores are
 directly comparable. Final showcase: Saturday, 2026-12-05.
 
